@@ -1,0 +1,30 @@
+@import "../../public/scss/variables";
+
+.elem {
+  text-align: center;
+  .icon {
+    display: flex;
+    height: 6.5rem;
+    i {
+      font-size: 4.5rem;
+      margin: auto;
+      color: $site;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+    }
+  }
+  p {
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+  &:hover {
+    .icon {
+      i {
+        font-size: 5rem;
+      }
+    }
+  }
+}

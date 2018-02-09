@@ -9,6 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
+        "public",
         "favicon.ico"
       ],
       "index": "index.html",
@@ -19,9 +20,16 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "../node_modules/sweetalert/dist/sweetalert.min.js",
+        "../node_modules/slick-carousel/slick/slick.min.js",
+        "public/js/jquery.easeScroll.js",
+        "public/js/common.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -54,7 +62,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "component": {}
   }
 }

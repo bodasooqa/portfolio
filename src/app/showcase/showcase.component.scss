@@ -1,0 +1,24 @@
+.text-part {
+  padding: 8rem 4rem;
+  margin-bottom: auto;
+  margin-top: auto;
+  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+img {
+  width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .text-part {
+    padding: 7rem 3.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .text-part {
+    padding: 4rem 2rem;
+  }
+}
