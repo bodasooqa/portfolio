@@ -288,6 +288,9 @@ body {
         font-weight: 600;
         letter-spacing: .3px;
       }
+      i {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -481,16 +484,15 @@ section {
   margin-bottom: 12px;
   padding: 0;
   li {
-    display: inline-block;
+    display: flex;
     width: 100%;
     margin-bottom: 7px;
   }
-  svg {
-    float: left;
-    font-size: 20px;
-  }
   div {
-    margin-left: 35px;
+    margin-left: 10px;
+    a {
+      color: inherit;
+    }
   }
 }
 footer {
@@ -514,7 +516,7 @@ footer {
     margin-bottom: 10px;
     text-transform: uppercase;
   }
-  svg {
+  i {
     color: $red;
   }
 }
