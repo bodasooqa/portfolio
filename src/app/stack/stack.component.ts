@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DataService} from '../data.service';
 
 declare var $: any;
 
@@ -8,8 +9,9 @@ declare var $: any;
   styleUrls: ['./stack.component.scss']
 })
 export class StackComponent implements OnInit {
+  technologies: any;
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
     $(document).ready(() => {
@@ -21,5 +23,9 @@ export class StackComponent implements OnInit {
         prevArrow: '<i class="slick-button fa fa-angle-left"></i>'
       });
     });
+    this.dataService.getData()
+      .subscribe(data => {
+        this.technologies = data;
+      });
   }
 }

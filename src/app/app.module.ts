@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { StackComponent } from './stack/stack.component';
+import {HttpClientModule} from '@angular/common/http';
+import {DataService} from './data.service';
 
 
 @NgModule({
@@ -28,9 +30,9 @@ import { StackComponent } from './stack/stack.component';
     StackComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
