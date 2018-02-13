@@ -1,8 +1,11 @@
 const router = require('express').Router();
-const ctrl = require('../controllers/main');
 
-// GET ALL
-router.get('/', ctrl.getAll);
+router.get('/', (req, res) => {
+  res.json({
+    posts: '/posts',
+    technologies: '/technologies'
+  })
+});
 
 module.exports = router;
 

@@ -14,6 +14,7 @@ import { ShowcaseComponent } from './showcase/showcase.component';
 import { StackComponent } from './stack/stack.component';
 import {HttpClientModule} from '@angular/common/http';
 import {DataService} from './data.service';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import {DataService} from './data.service';
     StackComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule
+    BrowserModule, HttpClientModule, FormsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

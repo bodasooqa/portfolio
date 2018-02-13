@@ -114,7 +114,7 @@ $(function() {
 		return false;
 	});
 
-	$("#contact-form").submit(function() {
+	/*$("#contact-form").submit(function() {
 		let $this = $(this);
 		$.ajax({
 			url: 'server/send.php',
@@ -137,6 +137,6 @@ $(function() {
 			}
 		});
 		return false;
-	});
+	});*/
 
 });
