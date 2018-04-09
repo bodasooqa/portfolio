@@ -6,10 +6,7 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getTechnologies() {
-    return this.http.get('http://localhost:3000/api/technologies');
-  }
-  getPosts() {
-    return this.http.get('http://localhost:3000/api/posts');
+  getData(url) {
+    return this.http.get(`http://localhost:3000/api/${url}`);
   }
 }

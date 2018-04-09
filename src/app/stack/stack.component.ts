@@ -46,7 +46,8 @@ export class StackComponent implements OnInit {
         ]
       });
     });
-    this.dataService.getTechnologies()
+
+    this.dataService.getData('technologies')
       .subscribe(data => {
         this.technologies = data;
       });

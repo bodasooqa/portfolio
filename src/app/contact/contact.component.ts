@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {Http} from '@angular/http';
 
 @Component({
   selector: 'app-contact',
@@ -8,12 +7,9 @@ import {Http} from '@angular/http';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(private http: Http) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  submitContact(event, formData) {
-    console.log(formData.value);
-  }
 }

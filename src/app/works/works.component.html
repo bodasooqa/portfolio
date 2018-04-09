@@ -1,0 +1,14 @@
+<section id="works">
+  <div class="container">
+    <h2 class="section-title">Мои работы</h2>
+    <p class="section-lead text-muted">В данной подборке вам представляются мои проекты, а так же проекты, в которых я принял непосредственное участие.</p>
+    <div class="works">
+      <div class="work" *ngFor="let work of works">
+        <a href="{{work.url}}" target="_blank">
+          <img src="public/img/works/{{work.img}}.png">
+          <h4>{{work.name}}</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

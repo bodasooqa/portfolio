@@ -12,7 +12,7 @@ export class BlogComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.getPosts()
+    this.dataService.getData('posts')
       .subscribe(data => {
         this.posts = data;
       });

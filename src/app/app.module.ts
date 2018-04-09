@@ -15,6 +15,7 @@ import { StackComponent } from './stack/stack.component';
 import {HttpClientModule} from '@angular/common/http';
 import {DataService} from './data.service';
 import {FormsModule} from '@angular/forms';
+import { WorksComponent } from './works/works.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {FormsModule} from '@angular/forms';
     ContactComponent,
     FooterComponent,
     ShowcaseComponent,
-    StackComponent
+    StackComponent,
+    WorksComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, FormsModule

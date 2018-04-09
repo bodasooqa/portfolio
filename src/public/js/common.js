@@ -9,6 +9,10 @@ $(function() {
 	}
 	$("body").easeScroll();
 
+  particlesJS.load('works', 'assets/particles.json', function () {
+    console.log('LOADED');
+  });
+
 	$("[data-bg]").each(function() {
 		let $this = $(this),
 				$bg = $this.attr("data-bg");
