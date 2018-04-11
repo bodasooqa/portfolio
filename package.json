@@ -45,6 +45,7 @@
     "codelyzer": "^4.0.1",
     "gulp": "^3.9.1",
     "gulp-cache": "^1.0.2",
+    "gulp-image": "^4.3.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-pngquant": "^1.0.12",
     "imagemin-pngquant": "^5.0.1",

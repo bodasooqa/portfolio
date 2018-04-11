@@ -99,7 +99,7 @@ body {
   font-weight: 500;
   text-transform: uppercase;
 }
-.technologies {
+.swiper-wrapper {
   min-height: 200px;
   display: flex;
   align-items: center;
@@ -546,6 +546,24 @@ footer {
     color: $red;
   }
 }
+
+.alert-msg {
+  position: fixed;
+  transition: all 0.5s;
+  width: 600px;
+  height: 100px;
+  background: rgba(255, 158, 0, 0.5);
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 150px;
+  opacity: 0;
+  p {
+    padding: 15px;
+    font-weight: 600;
+  }
+}
+
 @media (max-width: 1199px) {
   .projects-picture {
     &.laptop {
@@ -557,6 +575,14 @@ footer {
     &.phone {
       display: none;
     }
+  }
+  iframe {
+    width: 340px;
+  }
+}
+@media (max-width: 991px) {
+  iframe {
+    width: 260px;
   }
 }
 @media screen and(max-width: 768px) {

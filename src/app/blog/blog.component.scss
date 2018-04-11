@@ -1,0 +1,16 @@
+.to-blog {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  i.fa {
+    font-size: 8rem;
+    color: #c5c5c5;
+  }
+  .btn {
+    width: 120px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('gulp-pngquant');
+const image = require('gulp-image');
 const cache = require('gulp-cache');
 
 gulp.task('img', function() {
@@ -13,6 +14,14 @@ gulp.task('img', function() {
     })))
     .pipe(pngquant({
       quality: '65-80'
+    }))
+    .pipe(gulp.dest('src/public/img'));
+});
+
+gulp.task('compress', () => {
+  gulp.src('src/public/img/**/*')
+    .pipe(image({
+      pngquant: false
     }))
     .pipe(gulp.dest('src/public/img'));
 });
