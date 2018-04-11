@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap";
 @import "~slick-carousel/slick/slick";
+@import "~swiper/dist/css/swiper.min.css";
 @import "public/scss/variables";
 
 html {
@@ -655,7 +656,7 @@ footer {
   width: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
-  z-index: 1;
+  z-index: 15;
   &.bg-dark {
     background-color: $black !important;
   }
@@ -790,7 +791,7 @@ form.contact {
     border-radius: 0;
     border-width: 2px;
     &:focus {
-      border: 2px solid $black;
+      border: 2px solid #1e6ec5;
     }
   }
   .btn-primary {

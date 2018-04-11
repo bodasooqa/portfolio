@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from '../data.service';
+import 'swiper';
 declare var $: any;
 
 @Component({
@@ -14,13 +15,7 @@ export class WorksComponent implements OnInit {
 
   ngOnInit() {
     $(document).ready(() => {
-      $('.works').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 1,
-        nextArrow: '<i class="slick-button fa fa-angle-right"></i>',
-        prevArrow: '<i class="slick-button fa fa-angle-left"></i>',
-      });
+
     });
 
     this.dataService.getData('works')

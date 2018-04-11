@@ -36,6 +36,30 @@ $(function() {
 		return false;
 	});
 
+	let works = new Swiper('.works', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
+
+  let technologies = new Swiper('.technologies', {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
+
 	$(window).scroll(function() {
 		let $this = $(this);
 		if($this.scrollTop() > $(".hero").outerHeight() - 150) {

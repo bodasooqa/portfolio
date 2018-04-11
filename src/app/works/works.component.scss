@@ -13,10 +13,12 @@
     background: rgba(255, 255, 255, 0.8);
     padding: 15px;
     .work {
-      filter: blur(3px);
+      //filter: blur(3px);
       padding: 15px;
       outline: none;
+      border: 1px solid #eeeeee;
       a {
+        text-decoration: none;
         outline: none;
         img {
           width: 100%;
@@ -24,7 +26,6 @@
         h4 {
           text-align: center;
           padding: 20px;
-          margin-bottom: 100px;
         }
       }
     }
@@ -34,4 +35,13 @@
   }
 }
 
-
+.swiper-button-next, .swiper-button-prev {
+  top: 58%;
+  outline: none;
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next {
+  right: 0;
+}

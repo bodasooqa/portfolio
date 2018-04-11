@@ -14,39 +14,6 @@ export class StackComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    $(document).ready(() => {
-      $('.technologies').slick({
-        slidesToShow: 4,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        nextArrow: '<i class="slick-button fa fa-angle-right"></i>',
-        prevArrow: '<i class="slick-button fa fa-angle-left"></i>',
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      });
-    });
-
     this.dataService.getData('technologies')
       .subscribe(data => {
         this.technologies = data;

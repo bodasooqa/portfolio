@@ -2,9 +2,11 @@
   <div class="container">
     <h2 class="section-title">Технологии</h2>
     <p class="section-lead text-muted">В своих проектах я использую множество различных технологий, которые делают процесс разработки проще, а работу будущего сайта или веб-приложения качественнее.</p>
-    <div class="technologies">
-      <div class="item" *ngFor="let item of technologies">
-        <img src="public/img/technologies/{{item.name}}.png" alt="node">
+    <div class="technologies swiper-container">
+      <div class="swiper-wrapper">
+        <div class="item swiper-slide" *ngFor="let item of technologies">
+          <img src="public/img/technologies/{{item.name}}.png" alt="node">
+        </div>
       </div>
     </div>
   </div>
