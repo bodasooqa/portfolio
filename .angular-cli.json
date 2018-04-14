@@ -29,6 +29,7 @@
         "../node_modules/slick-carousel/slick/slick.min.js",
         "../node_modules/particles.js/particles.js",
         "../node_modules/swiper/dist/js/swiper.min.js",
+        "../node_modules/imagesloaded/imagesloaded.pkgd.min.js",
         "../node_modules/masonry-layout/dist/masonry.pkgd.min.js",
         "public/js/jquery.easeScroll.js",
         "public/js/common.js"

@@ -77,11 +77,18 @@ $(function() {
     });
   });
 
-  $('.masonry').ready( function() {
+  $('.masonry').imagesLoaded(function() {
     $('.masonry').masonry({
       itemSelector: '.masonry-item',
     });
   });
+
+  // (function($) {
+  //   let $container = $('.masonry');
+  //   $container.imagesLoaded(function() {
+  //     $container.masonry();
+  //   });
+  // })(jQuery);
 
 	$(window).scroll(function() {
 		let $this = $(this);
