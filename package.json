@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "ng serve",
-    "dev": "concurrently \"ng serve\" \"nodemon server/app\"",
+    "dev": "concurrently \"ng serve --host localhost --port 4200\" \"nodemon server/app\"",
     "server": "nodemon server/app.js",
     "build": "ng build --prod"
   },

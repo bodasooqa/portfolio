@@ -10,7 +10,7 @@
       "assets": [
         "assets",
         "public",
-        "favicon.ico"
+        "favicon.png"
       ],
       "index": "index.html",
       "main": "main.ts",

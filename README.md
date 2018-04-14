@@ -6,11 +6,7 @@
 
 Командой `npm run dev` запускается локальный сервер:
 
-Приложение на `localhost:4200`, API на .
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Приложение на `localhost:4200`, API на `localhost:3000/api`.
 
 ## Build
 

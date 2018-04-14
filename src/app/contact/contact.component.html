@@ -15,18 +15,18 @@
         <div class="col-12 col-md-7">
           <p class="contact-text">Также можете оставить сообщение здесь, и я в скором времени отвечу вам на указанный адрес Email.</p>
 
-          <form class="contact row" #contactForm="ngForm" (ngSubmit)="submitContact($event, contactForm)">
+          <form class="contact row" #contactForm="ngForm">
             <div class="form-group col-6">
-              <input type="text" class="form-control" placeholder="Имя" name="name" [(ngModel)]="name" required="">
+              <input type="text" class="form-control" placeholder="Имя" name="name" required="">
             </div>
             <div class="form-group col-6">
-              <input type="email" class="form-control" placeholder="Email" name="email" [(ngModel)]="email" required="">
+              <input type="email" class="form-control" placeholder="Email" name="email" required="">
             </div>
             <div class="form-group col-12">
-              <input type="text" class="form-control" placeholder="Тема" name="subject" [(ngModel)]="subject" required="">
+              <input type="text" class="form-control" placeholder="Тема" name="subject" required="">
             </div>
             <div class="form-group col-12">
-              <textarea class="form-control" placeholder="Сообщение" name="message" [(ngModel)]="message" required=""></textarea>
+              <textarea class="form-control" placeholder="Сообщение" name="message" required=""></textarea>
             </div>
             <div class="form-group col-12 mt-2">
               <button class="btn btn-primary">
