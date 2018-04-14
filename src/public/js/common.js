@@ -35,43 +35,52 @@ $(function() {
 
 		return false;
 	});
-
-	let works = new Swiper('.works', {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
+  $('.works').ready(() => {
+    let works = new Swiper('.works', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
   });
 
-  let technologies = new Swiper('.technologies', {
-    slidesPerView: 4,
-    spaceBetween: 10,
-    autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      991: {
-        slidesPerView: 3,
-        spaceBetween: 0
+  $('.technologies').ready(() => {
+    let technologies = new Swiper('.technologies', {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
       },
-      767: {
-        slidesPerView: 2,
-        spaceBetween: 30
+      breakpoints: {
+        991: {
+          slidesPerView: 3,
+          spaceBetween: 0
+        },
+        767: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        502: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        }
       },
-      502: {
-        slidesPerView: 1,
-        spaceBetween: 0
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       }
-    },
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
+    });
+  });
+
+  $('.masonry').ready( function() {
+    $('.masonry').masonry({
+      itemSelector: '.masonry-item',
+    });
   });
 
 	$(window).scroll(function() {

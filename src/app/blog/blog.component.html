@@ -3,22 +3,22 @@
     <h2 class="section-title">Следите за моим блогом</h2>
     <p class="section-lead text-muted">Я регулярно веду свой тематический блог, в котором рассказываю про наиболее интересные события в сфере веб, веду учет новых технологий, покарившихся мне и даже упоминаю некоторых заказчиков и их проекты.</p>
     <div class="section-body">
-      <div class="row col-spacing">
+      <div class="row col-spacing masonry">
 
-        <div *ngFor="let item of posts; let i = index;" class="col-12 col-md-6 col-lg-4">
+        <div *ngFor="let item of posts; let i = index;" class="col-12 col-md-6 col-lg-4 masonry-item">
           <article class="card">
-            <img class="card-img-top" src="public/img/news/img0{{i + 1}}.jpg" alt="{{item.img}}">
+            <img class="card-img-top" src="public/img/news/{{item.img}}">
             <div class="card-body">
               <div class="card-subtitle mb-2 text-muted">от <a href="#">bodasooqa</a> {{ item.date | date:'dd.MM.yyyy - hh:mm':'+0300' }}</div>
               <h4 class="card-title"><a href="#" data-toggle="read" data-id="1">{{item.title}}</a></h4>
               <p class="card-text">{{item.desc}}</p>
               <div class="text-right">
-                <a href="#" class="card-more" data-toggle="read" data-id="1">Читать дальше <i class="fa fa-arrow-right"></i></a>
+                <button (click)="showAlert()" class="card-more" data-toggle="read" data-id="1">Читать дальше <i class="fa fa-arrow-right"></i></button>
               </div>
             </div>
           </article>
         </div>
-        <div class="col-lg-4 to-blog">
+        <div class="col-12 col-md-6 col-lg-4 to-blog masonry-item">
           <i class="fa fa-newspaper-o"></i>
           <h4>Еще больше новостей в блоге</h4>
           <button (click)="showAlert()" class="btn btn-primary">Перейти</button>
