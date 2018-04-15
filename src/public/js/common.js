@@ -78,17 +78,12 @@ $(function() {
   });
 
   $('.masonry').imagesLoaded(function() {
-    $('.masonry').masonry({
-      itemSelector: '.masonry-item',
-    });
+    setTimeout(() => {
+      $('.masonry').masonry({
+        itemSelector: '.masonry-item',
+      });
+    }, 300)
   });
-
-  // (function($) {
-  //   let $container = $('.masonry');
-  //   $container.imagesLoaded(function() {
-  //     $container.masonry();
-  //   });
-  // })(jQuery);
 
 	$(window).scroll(function() {
 		let $this = $(this);
