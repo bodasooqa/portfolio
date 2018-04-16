@@ -82,7 +82,7 @@ $(function() {
       $('.masonry').masonry({
         itemSelector: '.masonry-item',
       });
-    }, 300)
+    }, 500)
   });
 
 	$(window).scroll(function() {
