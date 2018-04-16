@@ -5,6 +5,7 @@ router.get('/', (req, res) => {
     posts: '/posts',
     works: '/works',
     technologies: '/technologies',
+    messages: '/messages',
   })
 });
 
