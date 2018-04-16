@@ -1,0 +1,67 @@
+.gate-header {
+  display: flex;
+  h4 {
+    flex: 1;
+  }
+}
+table {
+  margin: 25px 0;
+  .btn-danger {
+    i {
+      font-size: 20px;
+    }
+  }
+  .id-link {
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.form {
+  position: absolute;
+  background: #fff;
+  padding: 20px;
+  left: 0;
+  right: 0;
+  width: 600px;
+  margin: auto;
+  z-index: 2;
+  //opacity: 0;
+  transition: all 0.2s;
+  &.show {
+    opacity: 1;
+  }
+  &.delete-form {
+    top: 10rem;
+  }
+  .fa-close {
+    cursor: pointer;
+  }
+  input[type=submit] {
+    margin-top: 20px;
+  }
+  .custom-file {
+    margin-top: 1rem;
+    .custom-file-input:lang(ru) ~ .custom-file-label::after {
+      content: "Открыть";
+    }
+  }
+  .invalid-desc {
+    border: 1px solid #ff0000;
+    border-right: 3px solid #ff0000;
+    & ~ .invalid-feedback {
+      display: block;
+    }
+  }
+}
+.dark-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  z-index: 1;
+}

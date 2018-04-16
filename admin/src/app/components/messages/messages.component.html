@@ -1,0 +1,31 @@
+<div class="gate-header">
+  <h4>Сообщения &#8211; {{num}}</h4>
+
+</div>
+
+<table class="table table-bordered">
+  <thead class="thead-light">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">id</th>
+    <th scope="col">Имя</th>
+    <th scope="col">Email</th>
+    <th scope="col">Тема</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let message of messages; let i = index">
+    <th scope="row">{{i + 1}}</th>
+    <td><a class="id-link" (click)="showMessage(message.text)">{{message._id}}</a></td>
+    <td>{{message.name}}</td>
+    <td>{{message.email}}</td>
+    <td>{{message.subject}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<div *ngIf="blockState" class="form">
+  <p id="message"></p>
+</div>
+
+<div *ngIf="blockState" (click)="showMessage()" class="dark-bg"></div>
