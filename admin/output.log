@@ -1,0 +1,13 @@
+Starting up http-server, serving dist/
+Available on:
+  http://127.0.0.1:2525
+  http://167.99.208.99:2525
+  http://10.18.0.5:2525
+Hit CTRL-C to stop the server
+[Mon Apr 16 2018 09:29:24 GMT+0000 (UTC)] "GET /" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+[Mon Apr 16 2018 09:29:24 GMT+0000 (UTC)] "GET /styles.b2c319e56a1d368c7af0.bundle.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+[Mon Apr 16 2018 09:29:24 GMT+0000 (UTC)] "GET /inline.318b50c57b4eba3d437b.bundle.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+[Mon Apr 16 2018 09:29:24 GMT+0000 (UTC)] "GET /polyfills.cdf947a57d6814e62029.bundle.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+[Mon Apr 16 2018 09:29:24 GMT+0000 (UTC)] "GET /scripts.4942e7e3a5befbd580b4.bundle.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+[Mon Apr 16 2018 09:29:24 GMT+0000 (UTC)] "GET /main.5257dbd4c53c6dba3962.bundle.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+[Mon Apr 16 2018 09:29:25 GMT+0000 (UTC)] "GET /favicon.ico" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
