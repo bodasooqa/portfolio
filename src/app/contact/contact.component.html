@@ -3,7 +3,7 @@
     <h2 class="section-title text-center">Связаться</h2>
     <p class="section-lead text-center text-muted">Некоторая контактная информация, если захотите связаться со мной.</p>
     <div class="section-body">
-      <div class="row col-spacing">
+      <div class="row">
         <div class="col-12 col-md-5">
           <p class="contact-text">Вы можете позвонить мне в любой день с 10:00 до 20:00 или воспользоваться электронной почтой.</p>
           <ul class="contact-icon">
@@ -15,18 +15,18 @@
         <div class="col-12 col-md-7">
           <p class="contact-text">Также можете оставить сообщение здесь, и я в скором времени отвечу вам на указанный адрес Email.</p>
 
-          <form class="contact row" #contactForm="ngForm">
+          <form class="contact row" (ngSubmit)="onSubmit()" #contactForm>
             <div class="form-group col-6">
-              <input type="text" class="form-control" placeholder="Имя" name="name" required="">
+              <input type="text" class="form-control" placeholder="Имя" name="name" id="name" [(ngModel)]="message.name" #name="ngModel" required>
             </div>
             <div class="form-group col-6">
-              <input type="email" class="form-control" placeholder="Email" name="email" required="">
+              <input type="email" class="form-control" placeholder="Email" name="email" id="email" [(ngModel)]="message.email" #email="ngModel" required="">
             </div>
             <div class="form-group col-12">
-              <input type="text" class="form-control" placeholder="Тема" name="subject" required="">
+              <input type="text" class="form-control" placeholder="Тема" name="subject" id="subject" [(ngModel)]="message.subject" #subject="ngModel" required="">
             </div>
             <div class="form-group col-12">
-              <textarea class="form-control" placeholder="Сообщение" name="message" required=""></textarea>
+              <textarea class="form-control" placeholder="Сообщение" name="text" id="text" [(ngModel)]="message.text" #text="ngModel" required=""></textarea>
             </div>
             <div class="form-group col-12 mt-2">
               <button class="btn btn-primary">
