@@ -5,7 +5,7 @@ import {HttpClient} from "@angular/common/http";
 @Injectable()
 export class DataService {
 
-  host = 'localhost';
+  host = 'bodasooqa.ru';
 
   constructor(private http: HttpClient) {
     this.getAll('').subscribe(data => {
