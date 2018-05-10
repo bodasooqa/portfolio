@@ -1,10 +1,16 @@
 .text-part {
-  padding: 8rem 4rem;
+  padding: 5rem 4rem;
   margin-bottom: auto;
   margin-top: auto;
   p {
     font-size: 20px;
     font-weight: 300;
+  }
+}
+.img-part {
+  padding: 3rem;
+  img {
+    border: 5px solid #fff;
   }
 }
 img {

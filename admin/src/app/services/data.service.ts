@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import {Observable} from "rxjs/Observable";
-import {HttpClient} from "@angular/common/http";
+import {Observable} from 'rxjs/Observable';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable()
 export class DataService {
 
-  host = 'bodasooqa.ru';
+  host = 'localhost';
 
   constructor(private http: HttpClient) {
     this.getAll('').subscribe(data => {
