@@ -15,7 +15,7 @@
         <div class="col-12 col-md-7">
           <p class="contact-text">Также можете оставить сообщение здесь, и я в скором времени отвечу вам на указанный адрес Email.</p>
 
-          <form class="contact row" (ngSubmit)="onSubmit(message)" #contactForm>
+          <form class="contact row" (ngSubmit)="onSubmit(message); showAlert()" #contactForm>
             <div class="form-group col-6">
               <input type="text" class="form-control" placeholder="Имя" name="name" id="name" [(ngModel)]="message.name" #name="ngModel" required>
             </div>

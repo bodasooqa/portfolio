@@ -556,6 +556,9 @@ footer {
     padding: 15px;
     font-weight: 600;
   }
+  &.access {
+    background: rgba(25, 87, 44, 0.51);
+  }
 }
 
 @media (max-width: 1199px) {
