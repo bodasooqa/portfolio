@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DataService} from '../data.service';
 
 @Component({
   selector: 'app-contact',
@@ -14,9 +15,17 @@ export class ContactComponent implements OnInit {
     text: ''
   };
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+  }
+
+  onSubmit(message) {
+    console.log(message);
+    this.dataService.addMessage('messages', message)
+      .subscribe(data => {
+        return data;
+      });
   }
 
 }
