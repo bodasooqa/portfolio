@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const MongoClient = require('mongodb').MongoClient;
 const bodyParser = require('body-parser');
 const db = require('./config/db');
@@ -10,6 +11,8 @@ const app = express();
 
 const port = 3000;
 
+app.use(express.static(path.join(__dirname, '../dist')));
+
 app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,6 +20,7 @@ app.use(bodyParser.json());
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS,DELETE,PUT');
   next();
 });
 
