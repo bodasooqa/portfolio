@@ -9,7 +9,7 @@ declare var $: any;
   styleUrls: ['./works.component.scss']
 })
 export class WorksComponent implements OnInit {
-  works: any;
+  data: any;
 
   constructor(private dataService: DataService) { }
 
@@ -18,9 +18,9 @@ export class WorksComponent implements OnInit {
 
     });
 
-    this.dataService.getData('works')
+    this.dataService.getData()
       .subscribe(data => {
-        this.works = data;
+        this.data = data;
       });
   }
 

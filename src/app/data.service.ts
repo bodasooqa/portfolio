@@ -6,8 +6,9 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getData(url) {
-    return this.http.get(`http://bodasooqa.ru:3000/api/${url}`);
+  getData() {
+    // return this.http.get(`http://bodasooqa.ru:3000/api/${url}`);
+    return this.http.get(`./assets/data.json`);
   }
 
   public addMessage(col, message) {

@@ -5,9 +5,9 @@
     <div class="section-body">
       <div class="row masonry">
 
-        <div *ngFor="let item of posts; let i = index;" class="col-12 col-md-6 col-lg-4 masonry-item">
+        <div *ngFor="let item of data.posts; let i = index;" class="col-12 col-md-6 col-lg-4 masonry-item">
           <article class="card">
-            <img class="card-img-top" src="public/img/news/{{item.img}}">
+            <img class="card-img-top" src="public/img/news/{{item.img}}.jpg">
             <div class="card-body">
               <div class="card-subtitle mb-2 text-muted">от <a href="#">bodasooqa</a> {{ item.date | date:'dd.MM.yyyy - hh:mm':'+0300' }}</div>
               <h4 class="card-title"><a href="#" data-toggle="read" data-id="1">{{item.title}}</a></h4>

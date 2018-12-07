@@ -9,14 +9,14 @@ declare var $: any;
   styleUrls: ['./stack.component.scss']
 })
 export class StackComponent implements OnInit {
-  technologies: any;
+  data: any;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.getData('technologies')
+    this.dataService.getData()
       .subscribe(data => {
-        this.technologies = data;
+        this.data = data;
       });
   }
 }

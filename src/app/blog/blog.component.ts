@@ -9,14 +9,14 @@ declare var $;
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
-  posts: any;
+  data: any;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.getData('posts')
+    this.dataService.getData()
       .subscribe(data => {
-        this.posts = data;
+        this.data = data;
       });
   }
 

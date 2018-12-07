@@ -4,7 +4,7 @@
     <p class="section-lead text-muted">В данной подборке вам представляются мои проекты, а так же проекты, в которых я принял непосредственное участие.</p>
     <div class="works swiper-container">
       <div class="swiper-wrapper">
-        <div class="work swiper-slide" *ngFor="let work of works">
+        <div class="work swiper-slide" *ngFor="let work of data.works">
             <a href="{{work.url}}" target="_blank">
               <img src="public/img/works/{{work.img}}.png">
               <h4>{{work.name}}</h4>

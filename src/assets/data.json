@@ -1,0 +1,72 @@
+{
+  "technologies": [
+    {
+      "name": "angular"
+    },
+    {
+      "name": "bootstrap"
+    },
+    {
+      "name": "express"
+    },
+    {
+      "name": "fa"
+    },
+    {
+      "name": "gulp"
+    },
+    {
+      "name": "jquery"
+    },
+    {
+      "name": "mongo"
+    },
+    {
+      "name": "node"
+    },
+    {
+      "name": "sass"
+    },
+    {
+      "name": "typed"
+    },
+    {
+      "name": "vue"
+    }
+  ],
+  "works": [
+    {
+      "name": "Kassir.ru",
+      "img": "kino-kassir"
+    },
+    {
+      "name": "Terra",
+      "img": "terra"
+    },
+    {
+      "name": "Exteriorcenter",
+      "img": "exterior"
+    },
+    {
+      "name": "Artline",
+      "img": "artline"
+    }
+  ],
+  "posts": [
+    {
+      "img": "img03",
+      "title": "Видеокурсы",
+      "desc": "В ближайшее время планирую записать видеоуроки по JavaScript, а также некоторым его фреймворкам."
+    },
+    {
+      "img": "img06",
+      "title": "Криптоконвертер",
+      "desc": "В моем профиле на GitHub вы теперь можете оценить новый проект - \"Cryptopay\". Это простой и качественный конвертер криптовалюты."
+    },
+    {
+      "img": "img05",
+      "title": "Новые технологии",
+    "desc": "Теперь мой стек пополнился еще одним фреймворком - Vue.js! Дальнейшую разработку планирую вести на нем."
+    }
+  ]
+}
